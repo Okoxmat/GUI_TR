@@ -5,12 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_TR"
         mc:Ignorable="d"
-        Title="1 nicer Rechner" Height="500" Width="400" Topmost="True" FontFamily="Showcard Gothic">
+        Title="1 nicer TR" Height="600" Width="400" Topmost="True" FontFamily="Vivaldi" ResizeMode="CanResize" FontWeight="ExtraBold" FontSize="20">
     <Window.Resources>
+       
+        
+
         <Style TargetType="Button">
             <Setter Property="Background" Value="White" />
             <Setter Property="BorderThickness" Value="2" />
             <Setter Property="FontSize" Value="20" />
+        </Style>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+        
+        <Style TargetType="Border">
+            <Setter Property="Background" Value="WhiteSmoke" />
+        
         </Style>
     </Window.Resources>
     
@@ -18,7 +30,7 @@
     
         <StackPanel>
 
-            <TextBox Margin="5 5 5 5" Padding="5"/>
+            <TextBox x:Name="Eingabefeld" Margin="5 5 5 5" Padding="10" />
 
             <Grid x:Name="Tasten">
 
@@ -38,28 +50,29 @@
                 </Grid.RowDefinitions>
 
                 <!-- 1.Reihe -->
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="00" Content="7" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="00" Content="8" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="00" Content="9" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="00" Content="+" />
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="00" Content="7" Click="Button_7"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="00" Content="8" Click="Button_8"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="00" Content="9" Click="Button_9"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="00" Content="+" Click="Button_add" Background="LightGray" />
                                                   
-                <!-- 2.Reihe -->                  
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="01" Content="4" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="01" Content="5" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="01" Content="6" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="01" Content="-" />
+                <!-- 2.Reihe -->
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="01" Content="4" Click="Button_4"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="01" Content="5" Click="Button_5"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="01" Content="6" Click="Button_6"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="01" Content="-" Click="Button_sub" Background="LightGray"/>
                                                   
                 <!-- 3.Reihe -->                  
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="02" Content="1" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="02" Content="2" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="02" Content="3" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="02" Content="*" />
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="02" Content="1" Click="Button_1" />
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="02" Content="2" Click="Button_2"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="02" Content="3" Click="Button_3"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="02" Content="*" Click="Button_mul" Background="LightGray"/>
                                                  
                 <!-- 4.Reihe -->                 
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="03" Content="0" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="03" Content=":" />
-                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="03" Content="=" />
-                
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="00" Grid.Row="03" Content="0" Click="Button_0"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="03" Grid.Row="03" Content=":" Click="Button_div" Background="LightGray"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="02" Grid.Row="03" Content="=" Click="Button_res" Background="LightGray"/>
+                <Button Margin="5 5 5 5" Padding="10" Grid.Column="01" Grid.Row="03" Content="=0" Click="Button_leeren" Background="LightGray" />
+
             </Grid>
 
             <Grid x:Name="Ausgabe">
@@ -68,11 +81,10 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Margin="5">
-                    <TextBlock Text="Ergebniss:" />
-                    <TextBox IsReadOnly="True" Background="#eee" Padding="5" />
+                    <TextBlock Text="Ergebnis:" />
+                    <TextBox x:Name="ErgebnisFeld" IsReadOnly="True" Background="DarkGray" Padding="10" />
                 </StackPanel>
             </Grid>
-
             <TextBlock Margin="5 20" Text="vong Til"  />
 
         </StackPanel>
