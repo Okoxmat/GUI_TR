@@ -107,10 +107,10 @@ namespace GUI_TR
 
         public void Button_res(object sender, RoutedEventArgs e)
         {
-            //Holt sich den Text aus der Eingabe zu var "Rechnugnsstring"
+            //Holt sich den Text aus der Eingabe zu var "Rechnungsstring"
             Rechnungstring = this.Eingabefeld.Text;
             Ergebnis = MathParser.EvalExpression(Rechnungstring.ToCharArray()).ToString();
-            MessageBox.Show(Rechnungstring);
+            //MessageBox.Show(Rechnungstring);
             this.ErgebnisFeld.Text = Ergebnis;
         }                                                                                                                              
 

@@ -1,0 +1,14 @@
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\bin\Release\GUI_TR.exe.config
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\bin\Release\GUI_TR.exe
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\bin\Release\GUI_TR.pdb
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\MainWindow.g.cs
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\App.g.cs
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR_MarkupCompile.cache
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR_MarkupCompile.lref
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\MainWindow.baml
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.g.resources
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.Properties.Resources.resources
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.csproj.GenerateResource.cache
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.csproj.CoreCompileInputs.cache
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.exe
+C:\Users\maste\Documents\GitHub\GUI TR\GUI_TR\GUI_TR\obj\Release\GUI_TR.pdb
